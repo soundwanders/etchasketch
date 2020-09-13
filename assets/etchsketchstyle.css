@@ -1,16 +1,14 @@
 
 /* float, display: inline-block, display: table-cell, vertical-align
    and column-* properties have no effect on grid items */
-.grid-container {
-    width:60%;
-    border: 20px solid maroon;
-    border-radius:2%;
-    background-color:white;
-    display: grid;
-    grid-template-columns: repeat(var(--grid-rows), 1fr);
-    grid-template-rows: repeat(var(--grid-columns), 1fr);
-    grid-gap: 1rem;
-    padding: 10px;
-    margin: 2% 17%;
-}
 
+.grid-container {
+    width:50%;
+    border: 10px solid black;
+    border-radius:10px;
+    background-color:rgb(175, 175, 175);
+    display: grid;
+    grid-gap: 0rem;
+    padding: 10px;
+    margin: 40px auto 0 auto;
+}
