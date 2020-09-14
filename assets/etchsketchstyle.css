@@ -5,12 +5,12 @@
 .grid-container {
     display: grid;
     width:60%;
-    overflow: hidden;
-    grid-gap: 0rem;
+    height: 75vh;
     padding: 10px;
-    margin: 50px auto 0 auto;
+    margin: 40px auto 0 auto;
+    grid-gap: 0rem;
     border: 10px solid black;
-    border-radius:10px;
-    background-color:rgb(175, 175, 175);
-    grid-template-rows: minmax(50em, max-content);
-}
+    border-radius: 10px;
+    background-color: rgb(175, 175, 175);
+    overflow: hidden;
+  }
