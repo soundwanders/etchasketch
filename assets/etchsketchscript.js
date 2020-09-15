@@ -27,8 +27,8 @@ function changeColor(x) {
     rgbValue2 = getRandomRGBValue();
     rgbValue3 = getRandomRGBValue();
     if (target.style.backgroundColor) {
-        let newOpacity = `${Number(target.style.opacity) + 0.5}`;
-        target.style.opacity = newOpacity;
+        let halfOpacity = `${Number(target.style.opacity) + 0.5}`;
+        target.style.opacity = halfOpacity;
     } else {
         target.style.opacity = '0.5';
         target.style.backgroundColor = `rgb(${rgbValue1}, ${rgbValue2}, ${rgbValue3})`;
