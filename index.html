@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device.width, initial.scale=1.0">
     <link rel="stylesheet" type="text/css" href ="/assets/etchsketchstyle.css">
 </head>
+<title>
+    Etch A Sketch
+</title>
 
 <header>
-    <button class="btn" id="clearGrid" onClick="clearGrid()">Clear All</button>
-    <button class="btn" id="blackBrush" onClick="changeColor()">Black Brush</button>
-    <button class="btn" id="multi"onClick="changeColor()">Multicolor Brush</button>
+    <!-- Javascript used to attach Event Listeners to each button -->
+    <button class="btn" id="clearGrid">Clear All</button>
+    <button class="btn" id="black">Black Brush</button>
+    <button class="btn" id="multi">Multicolor Brush</button>
 </header>
 
 <body>
     <div class="grid-container" style="grid-template-columns: repeat(16, 1fr);">
-        <!-- JS generates the gridbox divs -->
+        <!-- Javascript generates the gridbox divs -->
         </div>
 
     <script src="assets/etchsketchscript.js"></script>

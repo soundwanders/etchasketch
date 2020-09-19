@@ -28,3 +28,7 @@
   .RGBvalue {
      background-color: rgb(random*256);
   }
+
+  .buttons {
+     margin: 10% auto 0 auto;
+  }
