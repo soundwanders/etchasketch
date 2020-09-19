@@ -6,19 +6,18 @@
     <link rel="stylesheet" type="text/css" href ="/assets/etchsketchstyle.css">
 </head>
 
+<header>
+    <button class="btn" id="clearGrid" onClick="clearGrid()">Clear All</button>
+    <button class="btn" id="blackBrush" onClick="changeColor()">Black Brush</button>
+    <button class="btn" id="multi"onClick="changeColor()">Multicolor Brush</button>
+</header>
+
 <body>
-<div class="grid-container" style="grid-template-columns: repeat(16, 1fr);">
-    <!-- JS generates the gridbox divs -->
-    </div>
+    <div class="grid-container" style="grid-template-columns: repeat(16, 1fr);">
+        <!-- JS generates the gridbox divs -->
+        </div>
 
-<script src="assets/etchsketchscript.js"></script>
+    <script src="assets/etchsketchscript.js"></script>
 </body>
-
-<section>
-<button class="btn" id="clearGrid" onClick="clearGrid()">Clear All</button>
-<button class="btn" id="blackBrush" onClick="changeColor()">Black Brush</button>
-<button class="btn" id="multi"onClick="changeColor()">Multicolor Brush</button>
-
-</section>
 
 </html>
