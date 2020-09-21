@@ -8,7 +8,7 @@
 
 .grid-container {
     display: grid;
-    width:60%;
+    width:55%;
     height: 75vh;
     padding: 5px;
     margin: 50px auto 0 auto;
@@ -16,19 +16,50 @@
     grid-template-columns: repeat(4, 10px);
     border: 5px solid black;
     border-radius: 16px;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(218, 214, 214);
     cursor: pointer;
   }
 
   .div {
       border-radius:0px;
-      background-color: rgb(185, 185, 185);
+      background-color:  rgb(218, 214, 214);
   }
 
   .RGBvalue {
      background-color: rgb(random*256);
   }
 
-  .buttons {
-     margin: 10% auto 0 auto;
+  .btn {
+     margin: 1% 5% 0 0;
+     padding: 15px 20px;
+     background-color:navajowhite;
+     color: black;
+     font-size: x-large;
+     font-weight: bold;
+     font-family: "Courier New", Courier, monospace;
+     border: solid 3px black;
+     text-align: center;
+  }
+  
+  .btn:active {
+     background-color: steelblue;
+     -webkit-box-shadow: inset 0px 0px 3px floralwhite;
+     -moz-box-shadow: inset 0px 0px 5px floralwhite;
+          box-shadow: inset 0px 0px 5px floralwhite;
+  }
+
+  .header {
+     margin-left: 33%;
+  }
+
+  .background {
+     background-color: darkslategray;
+     padding-bottom: 3vh;
+     box-sizing: border-box;
+     height: 100%;
+     width: 100%;
+  }
+
+  .alert {
+     font-size: large;
   }
