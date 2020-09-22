@@ -8,10 +8,10 @@
 
 .grid-container {
     display: grid;
-    width:55%;
+    width:60%;
     height: 75vh;
     padding: 5px;
-    margin: 50px auto 0 auto;
+    margin: 5vh auto 5vh auto;
     grid-gap: 0rem;
     grid-template-columns: repeat(4, 10px);
     border: 5px solid black;
@@ -49,17 +49,14 @@
   }
 
   .header {
-     margin-left: 33%;
+     margin-left: 45vh;
+     vertical-align: baseline;
+     background-color: midnightblue;
+     padding-bottom: 5px;
   }
 
-  .background {
-     background-color: darkslategray;
-     padding-bottom: 3vh;
-     box-sizing: border-box;
-     height: 100%;
-     width: 100%;
-  }
-
-  .alert {
-     font-size: large;
+  .backgroundContainer {
+      background-color: midnightblue;
+      height: 100%;
+      width: 100%;
   }

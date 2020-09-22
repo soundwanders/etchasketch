@@ -2,6 +2,7 @@
 
 const gridContainer = document.querySelector('.grid-container'); //get html grid-container
 let brushColor = "black"; //sets default Brush color to black
+const getbox = document.getElementsByClassName('div');
 
 //---FUNCTIONS---//
 
@@ -16,7 +17,7 @@ function generateGrid(square) {
     const squares = document.querySelectorAll('.div'); //get all div grid boxes
 
     //add EVENT LISTENER on mouseenter for each grid box
-    squares.forEach(box => box.addEventListener('mouseenter', function brush(e){
+    squares.forEach(box => box.addEventListener('mouseenter', function drawFunction(e) {
         const target = e.target;
 
         //DRAW IF BRUSH COLOR IS BLACK (DEFAULT STATE)
@@ -25,16 +26,20 @@ function generateGrid(square) {
             target.style.opacity = halfopacity;
             target.style.backgroundColor = brushColor;
 
-        //ELSE IF BRUSH COLOR IS MULTI, USE RANDOM RGB BRUSH
-        } else if (brushColor === "multi"){
-            let halfopacity = `${Number(target.style.opacity) + 0.5}`;
-            rgbValue1 = getRandomRGBValue();
-            rgbValue2 = getRandomRGBValue();
-            rgbValue3 = getRandomRGBValue();
-            target.style.opacity = halfopacity;
-            target.style.backgroundColor = `rgb(${rgbValue1}, ${rgbValue2}, ${rgbValue3})`;
+            //ELSE IF BRUSH COLOR IS MULTI, USE RANDOM RGB BRUSH
+            } else if (brushColor === "multi") {
+                let halfopacity = `${Number(target.style.opacity) + 0.5}`;
+                rgbValue1 = getRandomRGBValue();
+                rgbValue2 = getRandomRGBValue();
+                rgbValue3 = getRandomRGBValue();
+                target.style.opacity = halfopacity;
+                target.style.backgroundColor = `rgb(${rgbValue1}, ${rgbValue2}, ${rgbValue3})`;
 
-        }
+            //ELSE IF BRUSH COLOR IS ERASER, USE ERASER BRUSH
+            }  else if (brushColor === "eraser") {
+                target.style.opacity = 1.0;
+                target.style.backgroundColor = '';
+            }
     }));
 }
 
@@ -52,23 +57,21 @@ function clearGrid() {
     generateGrid(24);
 }
 
-
-
 // ADD HOTKEY 'B' TO STOP PAINTING
 document.addEventListener('keypress', function(event){
-    const squares = document.querySelectorAll('.div'); //get all div grid boxes
-    const box = document.createElement('div');
-    box.className = 'div';
-
+    const squares = document.querySelectorAll('.box')
     if (event.key === 66 || event.keyCode === 66 || event.key=== 'b'){
         console.log("B key pressed. Drawing paused.");
-        squares.forEach((box) => box.removeEventListener('mouseenter', paint));
+        squares.forEach(box => box.removeEventListener('mouseenter', drawFunction));
     } else {
-            squares.forEach((box) => box.addEventListener('mouseenter', paint));
+            squares.forEach(box => box.addEventListener('mouseenter', drawFunction));
         }
 });
 
+
 //---BUTTONS---//
+// USING SWITCH AND ATTACHING CASE TO BUTTON ID'S TO SWITCH TARGET'S ID ON BUTTON CLICK.
+    // CASES CALL ON AND ACTIVATE FUNCTIONS TO MANIPULATE GRID
 
 const buttons = document.querySelectorAll('.btn'); // Call all buttons from html
 buttons.forEach(btn => btn.addEventListener('click', function(e){ // add Event Listener to buttons
@@ -93,6 +96,15 @@ buttons.forEach(btn => btn.addEventListener('click', function(e){ // add Event L
             clearGrid(alert);
             alert('Switched to Multicolor brush');
         break;
+
+        case 'eraser':
+            brushColor = "eraser";
+            console.log("Switched to Eraser.");
+        break;
+
+        case 'newgrid':
+            brushColor = "newGrid";
+          
     }
 }));
 

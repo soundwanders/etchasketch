@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="etchnsketch">
+    <meta name="title" content="Broop's Etch A Sketch">
+    <meta name="description" content="etchasketch">
     <meta name="viewport" content="width=device.width, initial.scale=1.0">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href ="/assets/etchsketchstyle.css">
 </head>
 
-<div class="background">
-
 <title>
-    Broop's Etch A Sketch
+~Broop's Etch A Sketch
 </title>
 
 <header class="header">
     <!-- Javascript used to attach Event Listeners to each button -->
     <button class="btn" id="black">Black Brush</button>
     <button class="btn" id="multi">Multicolor Brush</button>
-    <button class="btn" id="clearGrid">Start Over</button>
+    <button class="btn" id="eraser">Eraser</button>
+    <button class="btn" id="clearGrid">Clear Grid</button>
 </header>
+
+<div class="backgroundContainer">
 
 <body>
     <div class="grid-container" style="grid-template-columns: repeat(16, 1fr);">
@@ -27,6 +37,6 @@
     <script src="assets/etchsketchscript.js"></script>
 </body>
 
-
 </div>
+
 </html>
