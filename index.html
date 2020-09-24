@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
     <link rel="manifest" href="/site.webmanifest">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href ="/assets/etchsketchstyle.css">
@@ -19,15 +18,16 @@
 ~Broop's Etch A Sketch
 </title>
 
+<div class="backgroundContainer">
+
 <header class="header">
-    <!-- Javascript used to attach Event Listeners to each button -->
+    <!-- Javascript is used to attach Event Listeners to each button -->
     <button class="btn" id="black">Black Brush</button>
+    <button class="btn" id="white">White Brush</button>
     <button class="btn" id="multi">Multicolor Brush</button>
     <button class="btn" id="eraser">Eraser</button>
     <button class="btn" id="clearGrid">Clear Grid</button>
 </header>
-
-<div class="backgroundContainer">
 
 <body>
     <div class="grid-container" style="grid-template-columns: repeat(16, 1fr);">

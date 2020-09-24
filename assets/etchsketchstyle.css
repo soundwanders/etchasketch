@@ -14,7 +14,7 @@
     margin: 5vh auto 5vh auto;
     grid-gap: 0rem;
     grid-template-columns: repeat(4, 10px);
-    border: 5px solid black;
+    border: 10px solid royalblue;
     border-radius: 16px;
     background-color: rgb(218, 214, 214);
     cursor: pointer;
@@ -31,14 +31,14 @@
 
   .btn {
      margin: 1% 5% 0 0;
-     padding: 15px 20px;
+     padding: 20px 25px;
      background-color:navajowhite;
      color: black;
      font-size: x-large;
      font-weight: bold;
      font-family: "Courier New", Courier, monospace;
      border: solid 3px black;
-     text-align: center;
+     place-items: center;
   }
   
   .btn:active {
@@ -49,14 +49,13 @@
   }
 
   .header {
-     margin-left: 45vh;
+     margin-left: 26vh;
      vertical-align: baseline;
      background-color: midnightblue;
-     padding-bottom: 5px;
   }
 
   .backgroundContainer {
       background-color: midnightblue;
-      height: 100%;
-      width: 100%;
-  }
+      min-height: 100%;
+      min-width: 100%;
+   }
