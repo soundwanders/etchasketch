@@ -14,9 +14,9 @@ function generateGrid(square) {
         gridContainer.appendChild(box) // add divs to grid-container
     }
     gridContainer.style.gridTemplateColumns = `repeat(${square}, 1fr)`;
-    const squares = document.querySelectorAll('.div'); //get all div grid boxes
 
     //add EVENT LISTENER on mouseenter for each grid box
+    const squares = document.querySelectorAll('.div'); //get all div grid boxes
     squares.forEach(box => box.addEventListener('mouseenter', function drawFunction(e) {
         const target = e.target;
 
