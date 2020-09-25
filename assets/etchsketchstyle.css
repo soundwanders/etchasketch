@@ -9,53 +9,54 @@
 .grid-container {
     display: grid;
     width:60%;
-    height: 75vh;
+    height: 70vh;
     padding: 5px;
     margin: 5vh auto 5vh auto;
-    grid-gap: 0rem;
+    grid-gap: 0.0rem;
     grid-template-columns: repeat(4, 10px);
-    border: 10px solid royalblue;
-    border-radius: 16px;
-    background-color: rgb(218, 214, 214);
+    border: 10px solid orange;
+    border-radius: 20px;
+    background-color: rgb(209, 209, 209);
     cursor: pointer;
-  }
+}
 
-  .div {
-      border-radius:0px;
-      background-color:  rgb(218, 214, 214);
-  }
+.div {
+   border-radius:0px;
+   background-color:  rgb(218, 214, 214);
+}
 
-  .RGBvalue {
-     background-color: rgb(random*256);
-  }
+.RGBvalue {
+   background-color: rgb(random*256);
+}
 
-  .btn {
-     margin: 1% 5% 0 0;
-     padding: 20px 25px;
-     background-color:navajowhite;
-     color: black;
-     font-size: x-large;
-     font-weight: bold;
-     font-family: "Courier New", Courier, monospace;
-     border: solid 3px black;
-     place-items: center;
-  }
-  
-  .btn:active {
-     background-color: steelblue;
-     -webkit-box-shadow: inset 0px 0px 3px floralwhite;
-     -moz-box-shadow: inset 0px 0px 5px floralwhite;
-          box-shadow: inset 0px 0px 5px floralwhite;
-  }
+.btn {
+   margin: 1% 5% 0 0;
+   padding: 20px 25px;
+   background-color:navajowhite;
+   color: black;
+   font-size: x-large;
+   font-weight: bold;
+   font-family: "Courier New", Courier, monospace;
+   border: solid 3px black;
+   place-items: center;
+}
 
-  .header {
-     margin-left: 26vh;
-     vertical-align: baseline;
-     background-color: midnightblue;
-  }
+.btn:hover {
+   background-color: white;
+}
 
-  .backgroundContainer {
-      background-color: midnightblue;
-      min-height: 100%;
-      min-width: 100%;
-   }
+.btn:active {
+   background-color: skyblue;
+   -webkit-box-shadow: inset 0px 0px 3px floralwhite;
+   -moz-box-shadow: inset 0px 0px 5px floralwhite;
+         box-shadow: inset 0px 0px 5px floralwhite;
+}
+
+.header {
+   margin-left: 26vh;
+   vertical-align: baseline;
+   background-color: midnightblue;
+}
+
+
+html {background-color: midnightblue};
