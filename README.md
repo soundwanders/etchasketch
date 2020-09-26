@@ -1,13 +1,13 @@
 Javascript Etch A Sketch Readme
 
 <--User Guide--> <br>
----Move your cursor across the grid to color in the boxes.
----The buttons at the top of the page change the color of the boxes.
----Brush Color buttons do not clear the grid when pressed, allowing you to use multiple brush colors.
----The Clear Grid button will erase and reset the grid, allowing you to start over.
----Grid squares are shaded; 50% opacity per mouse pass over.
----The Eraser button allows user to return grid box to default color.
----Default Brush color is set to Black.
+---Move your cursor across the grid to color in the boxes.<br>
+---The buttons at the top of the page change the color of the boxes.<br>
+---Brush Color buttons do not clear the grid when pressed, allowing you to use multiple brush colors.<br>
+---The Clear Grid button will erase and reset the grid, allowing you to start over.<br>
+---Grid squares are shaded; 50% opacity per mouse pass over.<br>
+---The Eraser button allows user to return grid box to default color.<br>
+---Default Brush color is set to Black.<br><br>
 
 <--Project Notes--><br>
 ---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo.
