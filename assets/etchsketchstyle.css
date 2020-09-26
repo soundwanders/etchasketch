@@ -34,7 +34,7 @@
    padding: 5px 10px;
    background-color:navajowhite;
    color: black;
-   font-size: medium;
+   font-size: large;
    font-weight: bold;
    font-family: "Courier New", Courier, monospace;
    border: solid 3px black;
@@ -53,7 +53,7 @@
 }
 
 .header {
-   margin-left: 26vh;
+   margin-left: 33%;
    vertical-align: baseline;
    background-color: midnightblue;
 }
