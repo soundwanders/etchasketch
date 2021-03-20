@@ -1,4 +1,4 @@
-Javascript Etch A Sketch Readme
+Javascript Etch A Sketch
 https://soundwanders.github.io/etchasketch/
 
 <--User Guide--> <br>
@@ -8,12 +8,13 @@ https://soundwanders.github.io/etchasketch/
 ---The Clear Grid button will erase and reset the grid, allowing you to start over.<br>
 ---Grid squares are shaded; 50% opacity per mouse pass over.<br>
 ---The Eraser button allows user to return grid box to default color.<br>
----Default Brush color is set to Black.<br><br>
-
-<--Project Notes--><br>
+---Default Brush color is set to Black.
+<br><br><br>
+<h3><--Project Notes--></h3>
+<br><br>
 ---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo.
 <br>
----Added a div 'Grid Container' to HTML body to act as the grid template.
+---Added a div 'Grid Container' to HTML body to act as the grid template. This will serve as the 'screen' of the etch-a-sketch.
 <br>
 ---Needed to figure out how to create grid boxes using Javascript without just copy/pasting divs in HTML doc.<br>
     -Used for loop to create infinite # of divs that will serve as grid boxes, then append them to div grid container.<br>
@@ -32,5 +33,4 @@ https://soundwanders.github.io/etchasketch/
     -Added Console logs for each brush color switch to test each function.<br>
 
 ---Changed the Switch statement's cases, removing the Clear Grid function on brush color switch
-to allow for creative freedom and color mixing.<br><br><br>
--broop
+to allow for creative freedom and color mixing.
