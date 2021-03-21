@@ -9,8 +9,8 @@
 ---Grid squares are shaded; 50% opacity per mouse pass over.<br>
 ---The Eraser button allows user to return grid box to default color.<br>
 ---Default Brush color is set to Black.
-<br>
-<h4><--Project Notes--></h4>
+<br><br>
+<h3><--Project Notes--></h>
 ---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo. <br>
     
 ---Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch. <br>
