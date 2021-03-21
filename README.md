@@ -11,7 +11,6 @@
 ---Default Brush color is set to Black.
 <br><br>
 <h3><--Project Notes--></h3>
-<br><br>
 ---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo.
 <br>
 ---Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch.
