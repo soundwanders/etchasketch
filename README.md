@@ -1,6 +1,6 @@
 <a href = "https://soundwanders.github.io/etchasketch/"> <h2>Etch A Sketch</h2> </a>
 
-<--User Guide--> <br>
+<h3><--User Guide--></h3><br>
 ---An Etch A Sketch developed with HTML, CSS and Javascript.
 ---Move your cursor across the grid to color in the boxes.<br>
 ---The buttons at the top of the page change the color of the boxes.<br>
@@ -9,8 +9,8 @@
 ---Grid squares are shaded; 50% opacity per mouse pass over.<br>
 ---The Eraser button allows user to return grid box to default color.<br>
 ---Default Brush color is set to Black.
-<br><br>
-<h3><--Project Notes--></h3>
+<br>
+<h4><--Project Notes--></h4>
 ---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo. <br>
     
 ---Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch. <br>
