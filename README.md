@@ -10,17 +10,17 @@
 ---The Eraser button allows user to return grid box to default color.<br>
 ---Default Brush color is set to Black.
 <br><br>
-<h3><--Project Notes--></h>
----Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo. <br>
+<h3><--Project Notes--></h3>
+---Created blank HTML document, CSS stylesheet, Javascript script files and initialized github repo.
     
----Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch. <br>
+---Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch.
     
 ---To create grid boxes using Javascript, instead of just copy/pasting endless divs in the HTML, I used a for loop within a function to create infinite # of divs that will serve as grid boxes, then append them to the grid container.
-    -The creation of grid box divs is limited by the size of the grid container when it is created by calling the global function 'generateGrid' when the page is opened.<br>
+    -The creation of grid box divs is limited by the size of the grid container when it is created by calling the global function 'generateGrid' when the page is opened.
 
----Dynamically change the background color to allow user to draw on grid by attaching an event listener to each grid square.<br>
+---Dynamically change the background color to allow user to draw on grid by attaching an event listener to each grid square.
 
----Added Event Listener to each div, on mouse enter a function is executed that changes the background color of the grid square.<br>
+---Added Event Listener to each div, on mouse enter a function is executed that changes the background color of the grid square.
     -Draw function uses an if else statement to target each div box on the grid container.<br>
     -On target of the boxes, change the background color of the div's within the grid container to imitate coloring.<br>    
 
