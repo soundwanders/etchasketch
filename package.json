@@ -2,7 +2,7 @@
   "name": "etchasketch",
   "version": "1.0.0",
   "description": "etch-a-sketch",
-  "main": "index.js",
+  "main": "etchsketchscript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
