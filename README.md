@@ -1,7 +1,7 @@
 <a href = "https://soundwanders.github.io/etchasketch/"> <h2>Etch A Sketch</h2> </a>
 
 ## User Guide 
-- An Etch A Sketch developed with HTML, CSS and Javascript.
+- An Etch A Sketch created with HTML, CSS and Javascript.
 - Move your cursor across the grid to color in the boxes
 - The buttons at the top of the page change the color of the boxes
 - The Clear Grid button will erase and reset the grid, allowing you to start over
@@ -16,8 +16,8 @@ ________________________________________________________________________________
     - The creation of grid box divs is limited by the size of the grid container when it is created by calling the global function 'generateGrid' when the page is opened
 - Dynamically change the background color to allow user to draw on grid by attaching an event listener to each grid square
 - Added Event Listener to each div, on mouse enter a function is executed that changes the background color of the grid square
-    -Draw function uses an if else statement to target each div box on the grid container
-    -On target of the boxes, change the background color of the div's within the grid container to imitate coloring
+    - Draw function uses an if else statement to target each div box on the grid container
+    - On target of the boxes, change the background color of the div's within the grid container to imitate coloring
 - Used a Switch statement, declaring each cases' ID to be the different functions attached to the buttons.
 - Added the different Brush colors and Eraser to the Draw function's if, else statement
-    -Checks against cases to determine brush color, then changes background color according to the selection returned.
+    - Checks against cases to determine brush color, then changes background color according to the selection returned.
