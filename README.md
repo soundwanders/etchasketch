@@ -15,7 +15,7 @@ ________________________________________________________________________________
 - To create grid boxes using Javascript, instead of just copy/pasting endless divs in the HTML, I used a for loop within a function to create infinite # of divs that will serve as grid boxes, then append them to the grid container.
     - The creation of grid box divs is limited by the size of the grid container when it is created by calling the global function 'generateGrid' when the page is opened
 - Dynamically change the background color to allow user to draw on grid by attaching an event listener to each grid square
-- Added Event Listener to each div, on mouse enter a function is executed that changes the background color of the grid square
+- Added Event Listener to each div, when mouse enters the grid square, a function is executed that changes the background color of the grid square
     - Draw function uses an if else statement to target each div box on the grid container
     - On target of the boxes, change the background color of the div's within the grid container to imitate coloring
 - Used a Switch statement, declaring each cases' ID to be the different functions attached to the buttons.
