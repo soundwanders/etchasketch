@@ -13,7 +13,8 @@ ________________________________________________________________________________
 ## Project Notes
 - Added a div 'Grid Container' to HTML body to act as the grid template. This serves as the 'screen' of the etch-a-sketch.
 - To create grid boxes using Javascript, instead of just copy/pasting endless divs in the HTML, I used a for loop within a function to create infinite # of divs that will serve as grid boxes, then append them to the grid container.
-    - The creation of grid box divs is limited by the size of the grid container when it is created by calling the global function 'generateGrid' when the page is opened
+    - The creation of grid box divs is limited by the size of the grid container.
+    - The etch-a-sketch grid is created by calling the global function 'generateGrid' whenever the web page is opened unless the script is not loaded
 - Dynamically change the background color to allow user to draw on grid by attaching an event listener to each grid square
 - Added Event Listener to each div, when mouse enters the grid square, a function is executed that changes the background color of the grid square
     - Draw function uses an if else statement to target each div box on the grid container
