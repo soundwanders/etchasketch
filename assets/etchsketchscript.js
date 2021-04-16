@@ -1,11 +1,11 @@
-// Etchsketchscript.js
+// etchsketchscript.js
 
 const gridContainer = document.querySelector('.grid-container'); // get html grid-container
 let brushColor = 'black'; // sets default Brush color to black
 
-// ---FUNCTIONS---//
+// FUNCTIONS
 
-// GENERATE GRID FUNCTION BY CREATING DIVS AND APPENDING THEM TO PARENT-GRIDCONTAINER
+// generate grid function by creating divs and appending them to parent-gridcontainer
 function generateGrid (square) {
   for (let i = 0; i < square * square; i++) {
     const box = document.createElement('div');
@@ -14,18 +14,18 @@ function generateGrid (square) {
   }
   gridContainer.style.gridTemplateColumns = `repeat(${square}, 1fr)`;
 
-  // add EVENT LISTENER on mouseenter for each grid box
+  // add Event Listener to listen for mouse to enter each grid box's borders
   const squares = document.querySelectorAll('.div'); // get all div grid boxes
   squares.forEach(box => box.addEventListener('mouseenter', function drawFunction (e) {
     const target = e.target;
 
-    // DRAW IF BRUSH COLOR IS BLACK (DEFAULT STATE)
+    // draw if brush color is black (default state)
     if (brushColor === 'black') {
       const halfopacity = `${Number(target.style.opacity) + 0.5}`;
       target.style.opacity = halfopacity;
       target.style.backgroundColor = brushColor;
 
-      // ELSE IF BRUSH COLOR IS MULTI, USE RANDOM RGB BRUSH
+      // else if brush color is multi, use random rgb brush
     } else if (brushColor === 'multi') {
       const halfopacity = `${Number(target.style.opacity) + 0.5}`;
       rgbValue1 = getRandomRGBValue();
@@ -34,13 +34,13 @@ function generateGrid (square) {
       target.style.opacity = halfopacity;
       target.style.backgroundColor = `rgb(${rgbValue1}, ${rgbValue2}, ${rgbValue3})`;
 
-      // ELSE IF BRUSH COLOR IS WHITE USE WHITE BRUSH
+      // else if brush color is white use white brush
     } else if (brushColor === 'white') {
       const halfopacity = `${Number(target.style.opacity) + 0.5}`;
       target.style.opacity = halfopacity;
       target.style.backgroundColor = 'white';
 
-      // ELSE IF BRUSH COLOR IS ERASER, USE ERASER BRUSH
+      // else if brush color is eraser, use eraser brush
     } else if (brushColor === 'eraser') {
       target.style.opacity = 1.0;
       target.style.backgroundColor = '';
@@ -48,7 +48,7 @@ function generateGrid (square) {
   }));
 }
 
-// RETURN RANDOM RGB VALUE USING 'MATH' INTRINSIC OBJECT
+// return random rgb value using 'math' intrinsic object
 function getRandomRGBValue () {
   return Math.floor(Math.random() * (256));
 }
@@ -62,21 +62,23 @@ function clearGrid () {
   generateGrid(24);
 }
 
-/* ADD HOTKEY 'B' TO STOP PAINTING   -- non functional at the moment
+//
+/*
+ADD HOTKEY 'B' TO STOP PAINTING
 document.addEventListener('keypress', function(event){
-    if (event.key === 66 || event.keyCode === 66){
-        console.log("B key pressed. Drawing paused.");
-        squares.forEach(box => box.removeEventListener('mouseenter', drawFunction));
-    } else {
-            squares.forEach(box => box.addEventListener('mouseenter', drawFunction));
-        }
-});
-
+  if (event.key === 66 || event.keyCode === 66){
+    console.log("B key pressed. Drawing paused.");
+    squares.forEach(box => box.removeEventListener('mouseenter', drawFunction));
+  } else {
+    squares.forEach(box => box.addEventListener('mouseenter', drawFunction));
+  }
+})
 */
+//
 
-// ---BUTTONS---//
-// USING SWITCH AND ATTACHING CASE TO BUTTON ID'S TO SWITCH TARGET'S ID ON BUTTON CLICK.
-// CASES CALL ON AND ACTIVATE FUNCTIONS TO MANIPULATE GRID
+// BUTTONS
+// using switch and attaching case to button id's to switch target's id on button click.
+// cases call on and activate functions to manipulate grid
 
 const buttons = document.querySelectorAll('.btn'); // Call all buttons from html
 buttons.forEach(btn => btn.addEventListener('click', function (e) { // add Event Listener to buttons
@@ -120,5 +122,5 @@ buttons.forEach(btn => btn.addEventListener('click', function (e) { // add Event
   }
 }));
 
-// ---ADD GRID WITH 24 COLUMNS---//
+// ADD GRID WITH 24 COLUMNS
 generateGrid(24);
